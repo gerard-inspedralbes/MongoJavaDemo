@@ -16,6 +16,11 @@ public class Main {
             for (String dbName : databaseNames) {
                 System.out.println(dbName);
             }
+
+            ProyectoGestionAlumnos p1 = new ProyectoGestionAlumnos(mongoClient);
+
+            int assig = p1.numAsig("12345678A","2324_S1");
+            System.out.println(assig);
         }
     }
 }
